@@ -1,0 +1,11 @@
+# Local agent / editor settings
+.claude/
+
+# OS / editor cruft
+Thumbs.db
+.DS_Store
+*.log
+
+# Temp / preview artefacts
+assets/_preview_*.jpg
+**/_*.png
