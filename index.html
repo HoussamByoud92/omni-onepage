@@ -93,9 +93,7 @@
 
     <nav class="nav__links" aria-label="Navigation principale">
       <a href="#about" class="nav__link">Studio</a>
-      <a href="#services" class="nav__link">Démarche</a>
       <a href="#work" class="nav__link">Réalisations</a>
-      <a href="#why" class="nav__link">Pourquoi nous</a>
       <a href="#contact" class="nav__link">Contact</a>
     </nav>
 
@@ -113,10 +111,8 @@
   <div class="menu" id="menu" aria-hidden="true">
     <nav class="menu__links" aria-label="Navigation mobile">
       <a href="#about" class="menu__link"><span class="menu__ref">PL.01</span> Studio</a>
-      <a href="#services" class="menu__link"><span class="menu__ref">PL.02</span> Démarche</a>
-      <a href="#work" class="menu__link"><span class="menu__ref">PL.03</span> Réalisations</a>
-      <a href="#why" class="menu__link"><span class="menu__ref">PL.04</span> Pourquoi nous</a>
-      <a href="#contact" class="menu__link"><span class="menu__ref">PL.05</span> Contact</a>
+      <a href="#work" class="menu__link"><span class="menu__ref">PL.02</span> Réalisations</a>
+      <a href="#contact" class="menu__link"><span class="menu__ref">PL.03</span> Contact</a>
     </nav>
     <div class="menu__foot">
       <a href="tel:+212661131904">+212 6 61 13 19 04</a>
@@ -254,142 +250,11 @@
     </section>
 
     <!-- ==========================================================
-         SECTION 3 · SERVICES — horizontal roadmap / timeline
-    =========================================================== -->
-    <section class="services" id="services">
-      <div class="section-head">
-        <p class="eyebrow" data-reveal><span class="ref">PL.02</span> La démarche</p>
-        <h2 class="section-title" data-reveal-split>Du premier conseil<br/>à la maintenance.</h2>
-        <p class="section-lede" data-reveal>
-          Quatre étapes, une continuité. Faites défiler pour parcourir le chemin
-          d'un espace, du diagnostic à la vie quotidienne.
-        </p>
-      </div>
-
-      <div class="road" id="road">
-        <div class="road__viewport" id="roadViewport">
-          <div class="road__track" id="roadTrack">
-            <div class="road__line" aria-hidden="true"><span class="road__line-fill" id="roadFill"></span></div>
-
-            <!-- Milestone 1 -->
-            <article class="milestone" style="--m:0">
-              <span class="milestone__node" aria-hidden="true"></span>
-              <div class="milestone__card" data-tilt>
-                <span class="milestone__num">01</span>
-                <div class="milestone__icon" aria-hidden="true">
-                  <svg viewBox="0 0 40 40"><circle class="draw" cx="18" cy="18" r="11"/><path class="draw" d="M26 26 L34 34"/></svg>
-                </div>
-                <h3>Conseil</h3>
-                <p>Analyse de l'espace pour une planification intelligente, entre
-                  utilité et confort.</p>
-              </div>
-            </article>
-
-            <!-- Milestone 2 -->
-            <article class="milestone" style="--m:1">
-              <span class="milestone__node" aria-hidden="true"></span>
-              <div class="milestone__card" data-tilt>
-                <span class="milestone__num">02</span>
-                <div class="milestone__icon" aria-hidden="true">
-                  <svg viewBox="0 0 40 40"><path class="draw" d="M6 30 L24 6 L34 14 L16 34 Z"/><path class="draw" d="M24 6 L16 34"/></svg>
-                </div>
-                <h3>Design</h3>
-                <p>Développement des plans pour des environnements fonctionnels —
-                  le « best place to work ».</p>
-              </div>
-            </article>
-
-            <!-- Milestone 3 -->
-            <article class="milestone" style="--m:2">
-              <span class="milestone__node" aria-hidden="true"></span>
-              <div class="milestone__card" data-tilt>
-                <span class="milestone__num">03</span>
-                <div class="milestone__icon" aria-hidden="true">
-                  <svg viewBox="0 0 40 40"><path class="draw" d="M20 4 L34 12 L34 28 L20 36 L6 28 L6 12 Z"/><path class="draw" d="M20 4 L20 36"/><path class="draw" d="M6 12 L34 28"/></svg>
-                </div>
-                <h3>Travaux d'aménagement</h3>
-                <p>Mise en œuvre complète : électricité, informatique, plomberie,
-                  revêtements et solutions intelligentes.</p>
-              </div>
-            </article>
-
-            <!-- Milestone 4 -->
-            <article class="milestone" style="--m:3">
-              <span class="milestone__node" aria-hidden="true"></span>
-              <div class="milestone__card" data-tilt>
-                <span class="milestone__num">04</span>
-                <div class="milestone__icon" aria-hidden="true">
-                  <svg viewBox="0 0 40 40"><circle class="draw" cx="20" cy="20" r="6"/><path class="draw" d="M20 4 L20 9 M20 31 L20 36 M4 20 L9 20 M31 20 L36 20 M9 9 L13 13 M27 27 L31 31 M31 9 L27 13 M13 27 L9 31"/></svg>
-                </div>
-                <h3>Maintenance</h3>
-                <p>Un accompagnement continu pour préserver la fonctionnalité et
-                  l'ergonomie de l'espace dans le temps.</p>
-              </div>
-            </article>
-          </div>
-        </div>
-        <p class="road__hint" aria-hidden="true">Faites défiler ↓</p>
-      </div>
-    </section>
-
-    <!-- ==========================================================
-         SECTION 4 · WHY — layered floating cards + counters
-    =========================================================== -->
-    <section class="why" id="why">
-      <div class="why__glow" aria-hidden="true"></div>
-      <div class="section-head">
-        <p class="eyebrow" data-reveal><span class="ref">PL.04</span> Pourquoi Omnibuild</p>
-        <h2 class="section-title" data-reveal-split>Une seule équipe,<br/>du plan à la livraison.</h2>
-      </div>
-
-      <div class="why__stats">
-        <div class="stat" data-reveal data-float>
-          <span class="stat__num" data-count="21" data-suffix="">0</span>
-          <span class="stat__label">Espaces livrés</span>
-          <span class="stat__desc">Bureau, retail, éphémère et restaurant.</span>
-        </div>
-        <div class="stat" data-reveal data-float>
-          <span class="stat__num" data-count="4" data-suffix="">0</span>
-          <span class="stat__label">Secteurs d'intervention</span>
-          <span class="stat__desc">Une polyvalence éprouvée sur le terrain.</span>
-        </div>
-        <div class="stat" data-reveal data-float>
-          <span class="stat__num" data-count="4" data-suffix="">0</span>
-          <span class="stat__label">Étapes maîtrisées</span>
-          <span class="stat__desc">Conseil, design, travaux, maintenance.</span>
-        </div>
-        <div class="stat" data-reveal data-float>
-          <span class="stat__num" data-count="1" data-suffix="">0</span>
-          <span class="stat__label">Démarche pluridisciplinaire</span>
-          <span class="stat__desc">Un interlocuteur unique, de bout en bout.</span>
-        </div>
-      </div>
-
-      <div class="why__cards">
-        <article class="adv" data-reveal data-float data-tilt>
-          <h3><span class="adv__mark"></span> Expertise pluridisciplinaire</h3>
-          <p>Électricité, informatique, plomberie, revêtements, solutions
-            intelligentes — les métiers réunis sous un même toit.</p>
-        </article>
-        <article class="adv" data-reveal data-float data-tilt>
-          <h3><span class="adv__mark"></span> De bout en bout</h3>
-          <p>Du premier conseil jusqu'à la maintenance, une continuité qui protège
-            la cohérence de votre espace.</p>
-        </article>
-        <article class="adv" data-reveal data-float data-tilt>
-          <h3><span class="adv__mark"></span> Pensé pour l'usage</h3>
-          <p>Ergonomie, expression, efficacité : des espaces conçus autour de
-            celles et ceux qui les vivent.</p>
-        </article>
-      </div>
-    </section>
-
-    <!-- ==========================================================
          RÉALISATIONS — real project gallery
     =========================================================== -->
     <section class="work" id="work">
       <div class="section-head">
-        <p class="eyebrow" data-reveal><span class="ref">PL.03</span> Réalisations</p>
+        <p class="eyebrow" data-reveal><span class="ref">PL.02</span> Réalisations</p>
         <h2 class="section-title" data-reveal-split>21 espaces livrés,<br/>une même exigence.</h2>
         <p class="section-lede" data-reveal>
           Un aperçu de projets menés du conseil à la livraison — bureau, retail,
@@ -433,7 +298,7 @@
       <div class="contact__grid">
         <!-- Left -->
         <div class="contact__intro">
-          <p class="eyebrow" data-reveal><span class="ref">PL.05</span> Contact</p>
+          <p class="eyebrow" data-reveal><span class="ref">PL.03</span> Contact</p>
           <h2 class="contact__title" data-reveal-split>Dessinons<br/>votre espace.</h2>
           <p class="contact__lede" data-reveal>
             Parlez-nous de votre projet. Nous revenons vers vous avec un premier
@@ -536,8 +401,7 @@
         <div class="footer__col">
           <h4>Navigation</h4>
           <a href="#about">Studio</a>
-          <a href="#services">Démarche</a>
-          <a href="#why">Pourquoi nous</a>
+          <a href="#work">Réalisations</a>
           <a href="#contact">Contact</a>
         </div>
         <div class="footer__col">
