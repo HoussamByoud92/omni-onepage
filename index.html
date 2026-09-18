@@ -133,34 +133,81 @@
       <div class="hero__glow" aria-hidden="true"></div>
 
       <div class="hero__inner">
-        <p class="hero__eyebrow reveal-load"><span class="tick"></span> Aménagement des espaces · Casablanca</p>
+        <div class="hero__content">
+          <div class="hero__copy">
+            <p class="hero__eyebrow reveal-load"><span class="tick"></span> Aménagement d'espaces professionnels · Casablanca</p>
 
-        <h1 class="hero__title">
-          <span class="line"><span class="word">Un</span> <span class="word">espace</span> <span class="word">est</span></span>
-          <span class="line"><span class="word">bien</span> <span class="word">plus</span> <span class="word">qu'une</span></span>
-          <span class="line"><span class="word accent">œuvre</span> <span class="word accent">architecturale.</span></span>
-        </h1>
+            <h1 class="hero__title">
+              <span class="line"><span class="word">Transformez</span> <span class="word">vos</span></span>
+              <span class="line"><span class="word">bureaux</span> <span class="word">en</span> <span class="word accent">levier</span></span>
+              <span class="line"><span class="word accent">de performance.</span></span>
+            </h1>
 
-        <p class="hero__sub reveal-load">
-          Un lieu de création, un lieu de partage. Nous concevons et réalisons
-          des espaces de travail où la liberté et l'expression ont leur place.
-        </p>
+            <p class="hero__sub reveal-load">
+              Conseil, conception et réalisation : Omnibuild crée des espaces qui
+              renforcent le bien-être, l'image de marque et l'efficacité de vos équipes.
+            </p>
 
-        <div class="hero__cta reveal-load">
-          <a href="#contact" class="btn btn--primary" data-magnetic data-scroll>
-            <span>Démarrer un projet</span>
-            <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
-          </a>
-          <a href="#about" class="btn btn--ghost" data-magnetic data-scroll>
-            <span>Découvrir la démarche</span>
-          </a>
-        </div>
+            <div class="hero__cta reveal-load">
+              <a href="#work" class="btn btn--ghost" data-magnetic data-scroll>
+                <span>Voir nos réalisations</span>
+              </a>
+            </div>
 
-        <!-- Blueprint dimension annotation (signature) -->
-        <div class="hero__dim reveal-load" aria-hidden="true">
-          <span class="hero__dim-line"></span>
-          <span class="hero__dim-label">21 espaces livrés — bureau · retail · éphémère · restaurant</span>
-          <span class="hero__dim-line"></span>
+            <div class="hero__dim reveal-load" aria-hidden="true">
+              <span class="hero__dim-line"></span>
+              <span class="hero__dim-label">Un interlocuteur, du premier plan à la livraison</span>
+              <span class="hero__dim-line"></span>
+            </div>
+          </div>
+
+          <div class="hero__form-wrap" id="contact">
+            <p class="hero__form-kicker">Parlons de votre projet</p>
+            <h2>Obtenez un premier échange.</h2>
+            <p>Décrivez votre besoin : notre équipe revient vers vous rapidement.</p>
+            <form class="form form--hero" id="contactForm" novalidate>
+              <div class="form__row">
+                <div class="field">
+                  <input type="text" id="name" name="name" required autocomplete="name" placeholder=" " />
+                  <label for="name">Nom</label>
+                  <span class="field__line"></span>
+                </div>
+                <div class="field">
+                  <input type="text" id="company" name="company" autocomplete="organization" placeholder=" " />
+                  <label for="company">Société</label>
+                  <span class="field__line"></span>
+                </div>
+              </div>
+              <div class="form__row">
+                <div class="field">
+                  <input type="tel" id="phone" name="phone" autocomplete="tel" placeholder=" " />
+                  <label for="phone">Téléphone</label>
+                  <span class="field__line"></span>
+                </div>
+                <div class="field">
+                  <input type="email" id="email" name="email" required autocomplete="email" placeholder=" " />
+                  <label for="email">E-mail</label>
+                  <span class="field__line"></span>
+                </div>
+              </div>
+              <div class="field">
+                <input type="text" id="subject" name="subject" required placeholder=" " />
+                <label for="subject">Votre besoin</label>
+                <span class="field__line"></span>
+              </div>
+              <div class="field">
+                <textarea id="message" name="message" rows="3" required placeholder=" "></textarea>
+                <label for="message">Parlez-nous de votre espace</label>
+                <span class="field__line"></span>
+              </div>
+              <button type="submit" class="btn btn--submit" id="submitBtn" data-magnetic>
+                <span class="btn__label">Demander un échange</span>
+                <span class="btn__spinner" aria-hidden="true"></span>
+                <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </button>
+              <p class="form__status" id="formStatus" role="status" aria-live="polite"></p>
+            </form>
+          </div>
         </div>
       </div>
 
@@ -174,78 +221,57 @@
          SECTION 2 · ABOUT — stacking scroll cards
     =========================================================== -->
     <section class="about" id="about">
-      <div class="about__object" aria-hidden="true">
-        <img src="assets/obj-desk.png" alt="" loading="lazy" data-float width="996" height="526" />
-      </div>
       <div class="section-head">
         <p class="eyebrow" data-reveal><span class="ref">PL.01</span> Le studio</p>
         <h2 class="section-title" data-reveal-split>Un espace, plusieurs vies.</h2>
         <p class="section-lede" data-reveal>
-          Omnibuild travaille la matière du quotidien professionnel. Trois principes
-          guident chaque plan que nous dessinons.
+          Une méthode claire pour faire de vos espaces un atout pour vos équipes et votre activité.
         </p>
       </div>
 
       <div class="stack" id="stack">
         <!-- Card 1 -->
         <article class="stack__card" data-tilt style="--i:0">
-          <div class="stack__meta"><span class="stack__ref">00 / Philosophie</span><span class="stack__idx">01</span></div>
+          <div class="stack__meta"><span class="stack__ref">01 / Comprendre</span><span class="stack__idx">01</span></div>
           <div class="stack__body">
             <div class="stack__icon" aria-hidden="true">
               <svg viewBox="0 0 48 48"><path class="draw" d="M6 40 L6 18 L24 6 L42 18 L42 40" /><path class="draw" d="M6 40 L42 40" /><path class="draw" d="M18 40 L18 26 L30 26 L30 40" /></svg>
             </div>
             <div class="stack__text">
-              <h3>Un espace est un lieu de création et de partage</h3>
-              <p>Au-delà de l'architecture, nous concevons des lieux vivants — pensés
-                pour que l'Office Day rime avec liberté et expression.</p>
+              <h3>Un projet pensé pour vos usages</h3>
+              <p>Nous cadrons vos enjeux, vos équipes et votre espace avant de dessiner la bonne réponse.</p>
             </div>
           </div>
         </article>
 
         <!-- Card 2 -->
         <article class="stack__card" data-tilt style="--i:1">
-          <div class="stack__meta"><span class="stack__ref">01 / Ergonomie</span><span class="stack__idx">02</span></div>
+          <div class="stack__meta"><span class="stack__ref">02 / Concevoir</span><span class="stack__idx">02</span></div>
           <div class="stack__body">
             <div class="stack__icon" aria-hidden="true">
               <svg viewBox="0 0 48 48"><circle class="draw" cx="24" cy="24" r="16"/><path class="draw" d="M24 8 L24 24 L35 30"/></svg>
             </div>
             <div class="stack__text">
-              <h3>Ergonomie</h3>
-              <p>Nous nous assurons que l'espace réponde aux besoins et aux envies
-                réels de celles et ceux qui l'habitent chaque jour.</p>
+              <h3>Un design qui sert la performance</h3>
+              <p>Ergonomie, circulation et identité de marque sont réunies dans un plan cohérent.</p>
             </div>
           </div>
         </article>
 
         <!-- Card 3 -->
         <article class="stack__card" data-tilt style="--i:2">
-          <div class="stack__meta"><span class="stack__ref">02 / Expression</span><span class="stack__idx">03</span></div>
+          <div class="stack__meta"><span class="stack__ref">03 / Réaliser</span><span class="stack__idx">03</span></div>
           <div class="stack__body">
             <div class="stack__icon" aria-hidden="true">
               <svg viewBox="0 0 48 48"><path class="draw" d="M10 38 L20 14 L28 30 L34 20 L40 38"/><path class="draw" d="M8 38 L42 38"/></svg>
             </div>
             <div class="stack__text">
-              <h3>Expression</h3>
-              <p>Écouter, analyser, traduire. Chaque projet devient un espace
-                d'expression à l'image de celles et ceux qui le vivent.</p>
+              <h3>Une livraison maîtrisée</h3>
+              <p>Un seul partenaire coordonne les travaux, le mobilier et la mise en service.</p>
             </div>
           </div>
         </article>
 
-        <!-- Card 4 -->
-        <article class="stack__card" data-tilt style="--i:3">
-          <div class="stack__meta"><span class="stack__ref">03 / Efficacité</span><span class="stack__idx">04</span></div>
-          <div class="stack__body">
-            <div class="stack__icon" aria-hidden="true">
-              <svg viewBox="0 0 48 48"><path class="draw" d="M26 6 L12 28 L23 28 L20 42 L36 18 L25 18 Z"/></svg>
-            </div>
-            <div class="stack__text">
-              <h3>Efficacité</h3>
-              <p>Une expertise pluridisciplinaire pour équilibrer efficience et
-                efficacité — du premier trait à la livraison.</p>
-            </div>
-          </div>
-        </article>
       </div>
     </section>
 
@@ -255,10 +281,9 @@
     <section class="work" id="work">
       <div class="section-head">
         <p class="eyebrow" data-reveal><span class="ref">PL.02</span> Réalisations</p>
-        <h2 class="section-title" data-reveal-split>21 espaces livrés,<br/>une même exigence.</h2>
+        <h2 class="section-title" data-reveal-split>Des espaces qui<br/>font avancer votre activité.</h2>
         <p class="section-lede" data-reveal>
-          Un aperçu de projets menés du conseil à la livraison — bureau, retail,
-          restauration et espaces éphémères.
+          Trois exemples de projets menés du conseil à la livraison.
         </p>
       </div>
 
@@ -275,108 +300,6 @@
           <img src="assets/proj-retail.jpg" alt="Espace retail avec mur végétal aménagé par Omnibuild" loading="lazy" width="1200" height="923" />
           <figcaption><span class="work__cat">Retail</span><span class="work__name">GreenTown Pressing</span></figcaption>
         </figure>
-        <figure class="work__item" data-reveal data-tilt>
-          <img src="assets/proj-cafe.jpg" alt="Café et espace de restauration aménagé par Omnibuild" loading="lazy" width="1200" height="923" />
-          <figcaption><span class="work__cat">Restauration</span><span class="work__name">Café &amp; comptoir</span></figcaption>
-        </figure>
-        <figure class="work__item" data-reveal data-tilt>
-          <img src="assets/proj-booth.jpg" alt="Stand événementiel éphémère conçu par Omnibuild" loading="lazy" width="1200" height="923" />
-          <figcaption><span class="work__cat">Éphémère</span><span class="work__name">Stand événementiel</span></figcaption>
-        </figure>
-        <figure class="work__item" data-reveal data-tilt>
-          <img src="assets/proj-concept.jpg" alt="Concept 3D d'aménagement d'espace par Omnibuild" loading="lazy" width="1200" height="923" />
-          <figcaption><span class="work__cat">Design</span><span class="work__name">Concept 3D</span></figcaption>
-        </figure>
-      </div>
-    </section>
-
-    <!-- ==========================================================
-         CONTACT
-    =========================================================== -->
-    <section class="contact" id="contact">
-      <div class="contact__bg" aria-hidden="true"></div>
-      <div class="contact__grid">
-        <!-- Left -->
-        <div class="contact__intro">
-          <p class="eyebrow" data-reveal><span class="ref">PL.03</span> Contact</p>
-          <h2 class="contact__title" data-reveal-split>Dessinons<br/>votre espace.</h2>
-          <p class="contact__lede" data-reveal>
-            Parlez-nous de votre projet. Nous revenons vers vous avec un premier
-            regard et les prochaines étapes.
-          </p>
-
-          <ul class="contact__info" data-reveal>
-            <li>
-              <span class="contact__info-k">Téléphone</span>
-              <a href="tel:+212661131904">+212 6 61 13 19 04</a>
-            </li>
-            <li>
-              <span class="contact__info-k">E-mail</span>
-              <a href="mailto:contact@omnibuild.ma">contact@omnibuild.ma</a>
-            </li>
-            <li>
-              <span class="contact__info-k">Adresse</span>
-              <span>119, bd Abdelmoumen, 2e étage, N°15 — Casablanca</span>
-            </li>
-          </ul>
-
-          <!-- Floating 3D workspace object -->
-          <div class="contact__object" aria-hidden="true">
-            <img src="assets/obj-desk.png" alt="" loading="lazy" data-float width="996" height="526" />
-            <span class="contact__object-shadow"></span>
-          </div>
-        </div>
-
-        <!-- Right — glass form -->
-        <div class="contact__form-wrap" data-reveal>
-          <form class="form" id="contactForm" novalidate>
-            <div class="form__row">
-              <div class="field">
-                <input type="text" id="name" name="name" required autocomplete="name" placeholder=" " />
-                <label for="name">Nom</label>
-                <span class="field__line"></span>
-              </div>
-              <div class="field">
-                <input type="text" id="company" name="company" autocomplete="organization" placeholder=" " />
-                <label for="company">Société</label>
-                <span class="field__line"></span>
-              </div>
-            </div>
-
-            <div class="form__row">
-              <div class="field">
-                <input type="tel" id="phone" name="phone" autocomplete="tel" placeholder=" " />
-                <label for="phone">Téléphone</label>
-                <span class="field__line"></span>
-              </div>
-              <div class="field">
-                <input type="email" id="email" name="email" required autocomplete="email" placeholder=" " />
-                <label for="email">E-mail</label>
-                <span class="field__line"></span>
-              </div>
-            </div>
-
-            <div class="field">
-              <input type="text" id="subject" name="subject" required placeholder=" " />
-              <label for="subject">Sujet</label>
-              <span class="field__line"></span>
-            </div>
-
-            <div class="field">
-              <textarea id="message" name="message" rows="4" required placeholder=" "></textarea>
-              <label for="message">Message</label>
-              <span class="field__line"></span>
-            </div>
-
-            <button type="submit" class="btn btn--submit" id="submitBtn" data-magnetic>
-              <span class="btn__label">Envoyer la demande</span>
-              <span class="btn__spinner" aria-hidden="true"></span>
-              <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            </button>
-
-            <p class="form__status" id="formStatus" role="status" aria-live="polite"></p>
-          </form>
-        </div>
       </div>
     </section>
   </main>
@@ -387,43 +310,42 @@
   <footer class="footer" id="footer">
     <div class="footer__bg" aria-hidden="true"></div>
     <div class="footer__inner">
-      <div class="footer__top">
-        <a class="footer__logo" href="#hero" data-scroll aria-label="Omnibuild">
-          <img class="footer__logoimg" src="assets/logo-light.png" alt="Omnibuild" width="200" height="70" />
-        </a>
-        <p class="footer__statement">
-          Un espace est bien plus qu'une œuvre architecturale.
-          C'est un lieu de création et de partage.
-        </p>
+      <div class="footer__topline">
+        <span>OMNIBUILD / CASABLANCA</span>
+        <span>CONSEIL · DESIGN · RÉALISATION</span>
       </div>
 
-      <div class="footer__cols">
-        <div class="footer__col">
-          <h4>Navigation</h4>
-          <a href="#about">Studio</a>
-          <a href="#work">Réalisations</a>
-          <a href="#contact">Contact</a>
+      <div class="footer__main">
+        <div class="footer__cta">
+          <p class="footer__eyebrow"><span class="tick"></span> Prêt à faire évoluer vos espaces ?</p>
+          <h2>Parlons de<br/><span>votre projet.</span></h2>
+          <a href="#contact" class="btn footer__button" data-magnetic data-scroll>
+            <span>Démarrer un projet</span>
+            <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
         </div>
-        <div class="footer__col">
-          <h4>Studio</h4>
-          <a href="tel:+212661131904">+212 6 61 13 19 04</a>
-          <a href="mailto:contact@omnibuild.ma">contact@omnibuild.ma</a>
-          <span>119, bd Abdelmoumen<br/>2e étage, N°15 — Casablanca</span>
-        </div>
-        <div class="footer__col">
-          <h4>Réseaux</h4>
+
+        <div class="footer__side">
+          <div class="footer__contact">
+            <span class="footer__label">Nous joindre</span>
+            <a href="tel:+212661131904">+212 6 61 13 19 04</a>
+            <a href="mailto:contact@omnibuild.ma">contact@omnibuild.ma</a>
+            <span>119, bd Abdelmoumen, 2e étage<br/>N°15 — Casablanca, Maroc</span>
+          </div>
           <div class="footer__social">
-            <a href="#" aria-label="LinkedIn" data-magnetic>In</a>
-            <a href="#" aria-label="Instagram" data-magnetic>Ig</a>
-            <a href="#" aria-label="Behance" data-magnetic>Be</a>
+            <a href="https://www.facebook.com/OmnibuildAfrica" target="_blank" rel="noopener noreferrer" aria-label="Facebook" data-magnetic>Fb</a>
+            <a href="https://www.linkedin.com/company/omnibuild-africa" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" data-magnetic>In</a>
+            <a href="https://www.instagram.com/omnibuildafrica/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" data-magnetic>Ig</a>
           </div>
         </div>
       </div>
 
       <div class="footer__base">
         <span>© <span id="year"></span> Omnibuild — Aménagement des espaces.</span>
-        <span class="footer__made">Casablanca · Maroc</span>
+        <a href="#about" data-scroll>Découvrir le studio</a>
       </div>
+
+      <a class="footer__wordmark" href="#hero" data-scroll aria-label="Retour en haut">OMNIBUILD</a>
     </div>
   </footer>
 

@@ -21,7 +21,7 @@ Then open <http://localhost:8000>.
 - `index.html` · `style.css` · `script.js`
 - [anime.js](https://animejs.com/) for the motion timelines
 - [FormSubmit.co](https://formsubmit.co/) for the contact form (no account / no keys)
-- `assets/` — logo, optimized project photos, the floating desk object
+- `assets/` — logo and optimized project photos
 
 ## Contact form
 
